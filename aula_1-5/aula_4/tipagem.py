@@ -8,5 +8,5 @@ print(type(is_estudante))
 print(type(teste_bool))
 
 
-# dica: quandi quiser interagir com o código no terminal é só rodar com um -i
+# dica: quando quiser interagir com o código no terminal é só rodar com um -i
 # python -i codigo.py
