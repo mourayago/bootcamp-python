@@ -8,6 +8,9 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 flake8 = "^7.1.0"
+pandas = "^2.2.2"
+pandera = "^0.20.1"
+fastparquet = "^2024.5.0"
 
 
 [build-system]
