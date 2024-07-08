@@ -13,6 +13,12 @@ def media_lista(lista: List[float]) -> float:
     media = sum/tam
     return  media
 
+def filtrar_acima_de(valores: List[float], limite: float) -> List[float]:
+    resultado = []
+    for valor in valores:
+        if valor > limite:
+            resultado.append(valor)
+    return resultado
 
 if __name__ == "__main__":
 
