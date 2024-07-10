@@ -3,13 +3,15 @@ from datetime import datetime
 import os
 import logging
 
-# logging.basicConfig(level=logging.info, 
-#                     filename = "log.log", 
-#                     filemode="w",
-#                     format="%(asctime)s - %(levelname)s - %(message)s")
+logging.basicConfig(level=logging.DEBUG, 
+                    filename = "log.log", 
+                    filemode="w",
+                    format="%(asctime)s - %(levelname)s - %(message)s")
+logger = logging.getLogger()
 
 def ler_json(arquivo_json):
     df = pd.read_json(arquivo_json)
+    logger.info(f"{arquivo_json} - arquivo lido com sucesso")
     return df
 
 def list_files_dir(path: str) -> list:
@@ -38,11 +40,24 @@ def concatenar_dados(lista_arquivos: list) -> pd.DataFrame:
 def exportar_dados(dataframe):
     # flag
     # while flag != "csv" or flag != "parquet":
-    flag = input("Deseja extrair em CSV ou Parquet?").lower().strip()
-    if flag == "csv":
-        dataframe.to_csv("vendas.csv")
-    else:
-        dataframe.to_parquet("vendas.parquet")
+    try:
+        flag = input("Deseja extrair em CSV ou Parquet?").lower().strip()
+        if flag == "csv":
+            dataframe.to_csv("vendas.csv")
+            logger.info(f"arquivo salvo em csv - flag: {flag}")
+        else:
+            dataframe.to_parquet("vendas.parquet")
+            logger.info(f"arquivo salvo em parquet - flag: {flag}")
+    except:
+        logger.error("Erro de seleção de arquivo",exc_info=True)
+
+def run_pipeline(pasta: str) -> pd.DataFrame:
+    '''Função utilizada para ler todos os arquivos .json de uma pasta, 
+    concatenar os arquivos e salvar em um dataframe'''
+    files = list_files_dir(pasta)
+    df_final = concatenar_dados(files)
+    print(df_final)
+    exportar_dados(df_final)
 
 
 if __name__ == "__main__":
