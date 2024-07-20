@@ -1,0 +1,10 @@
+2024-07-20 12:42:10.676 | INFO     | __main__:soma_1:16 - Soma realizada igual a 5
+2024-07-20 12:42:18.631 | ERROR    | __main__:soma_1:19 - invalid literal for int() with base 10: 'A'
+2024-07-20 13:08:06.138 | INFO     | utils_log:wrapper:22 - Chamando função 'soma_2' com args () e kwargs {}
+2024-07-20 13:08:08.831 | INFO     | __main__:soma_2:28 - Soma realizada igual a 5
+2024-07-20 13:08:08.832 | INFO     | utils_log:wrapper:25 - Função 'soma_2' retornou 5
+2024-07-20 13:11:09.044 | INFO     | utils_log:wrapper:22 - Chamando função 'soma_2' com args () e kwargs {}
+2024-07-20 13:11:12.910 | ERROR    | __main__:soma_2:31 - invalid literal for int() with base 10: 'a'
+2024-07-20 13:11:12.911 | INFO     | utils_log:wrapper:25 - Função 'soma_2' retornou None
+2024-07-20 13:12:06.343 | INFO     | utils_log:wrapper:22 - Chamando função 'soma_2' com args () e kwargs {}
+2024-07-20 13:12:09.129 | INFO     | utils_log:wrapper:25 - Função 'soma_2' retornou 23

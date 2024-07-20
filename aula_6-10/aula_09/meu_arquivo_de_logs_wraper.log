@@ -1,0 +1,8 @@
+2024-07-20T13:08:06.138959-0300 INFO Chamando função 'soma_2' com args () e kwargs {} utils_log.py
+2024-07-20T13:08:08.831500-0300 INFO Soma realizada igual a 5 exemplo_00.py
+2024-07-20T13:08:08.832504-0300 INFO Função 'soma_2' retornou 5 utils_log.py
+2024-07-20T13:11:09.044772-0300 INFO Chamando função 'soma_2' com args () e kwargs {} utils_log.py
+2024-07-20T13:11:12.910840-0300 ERROR invalid literal for int() with base 10: 'a' exemplo_00.py
+2024-07-20T13:11:12.911837-0300 INFO Função 'soma_2' retornou None utils_log.py
+2024-07-20T13:12:06.343188-0300 INFO Chamando função 'soma_2' com args () e kwargs {} utils_log.py
+2024-07-20T13:12:09.129737-0300 INFO Função 'soma_2' retornou 23 utils_log.py
