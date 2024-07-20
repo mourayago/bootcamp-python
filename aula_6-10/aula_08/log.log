@@ -1,4 +1,4 @@
-2024-07-10 20:47:30,572 - INFO - data/coleta_dia01.json - arquivo lido com sucesso
-2024-07-10 20:47:30,576 - INFO - data/coleta_dia02.json - arquivo lido com sucesso
-2024-07-10 20:47:30,579 - INFO - data/coleta_dia03.json - arquivo lido com sucesso
-2024-07-10 20:47:32,351 - INFO - arquivo salvo em parquet - flag: 
+2024-07-20 12:00:34,578 - INFO - data/coleta_dia01.json - arquivo lido com sucesso
+2024-07-20 12:00:34,590 - INFO - data/coleta_dia02.json - arquivo lido com sucesso
+2024-07-20 12:00:34,600 - INFO - data/coleta_dia03.json - arquivo lido com sucesso
+2024-07-20 12:00:39,248 - INFO - arquivo salvo em csv - flag: csv
